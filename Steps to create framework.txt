@@ -1,0 +1,66 @@
+===================================================
+Application
+https://admin-demo.nopcommerce.com/
+UN : admin@yourstore.com
+Pwd : admin
+
+===================================================
+Package required :
+selenium
+pytest
+pytest-html
+pytest-xdist
+openpyxl
+
+===================================================
+Project Name and Folder Structure
+nopcommerceApp
+
+pageObjects(Package)
+testCase(Package)
+utilities(Package)
+TestData(Folder)
+Screenshots(Folder)
+Configuration(Folder)
+Logs(Folder)
+Reports(Folder)
+
+===================================================
+Create Page Object class under pageObjects(Package) for Login Page objects and actions
+web elements present in Login page (User name , Password ,login Button)
+
+Create Test Class under testCase(Package)
+name class with Test case ID
+Example File name test_login.py
+class Test_001_Login:
+Create parameter values 
+create test methods 
+to access page object create object of the page object class and access the methods to enter value and use it as test steps
+
+reusable steps :
+create file called conftest.py
+create setup method which will return driver and tag that with @pytest.fixture
+
+
+To add Screenshot
+self.driver.save_screenshot(".\\Screenshots\\" + "test_login.png")
+Name of the test method for the screenshot
+
+
+================================================================
+I created git repository locally How do i osug it to Remote:
+First Create Git Remote Repository with the name nopcommerceApp
+
+git remote add origin https://github.com/shivashi2020/nopcommerceApp01.git
+$ git branch -M main
+$ git push -u origin main
+
+
+
+
+https://github.com/shivashi2020/nopcommerceApp.git
+
+to find all added remot name 
+git remote -v
+to remove 
+git remote remove master
