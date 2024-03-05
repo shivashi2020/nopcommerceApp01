@@ -1,5 +1,7 @@
 import configparser
 
+
+
 config = configparser.RawConfigParser()
 config.read(".\\Configuration\\config.ini")
 
@@ -21,3 +23,9 @@ class Readconfig():
     def getUserPassword():
         password = config.get('LoginDetails', 'password')
         return password
+    @staticmethod
+    def getscreenshotPath():
+        screenshotpath =  config.get('ScreenshotDetails','screenshotpath')
+        return screenshotpath
+
+
