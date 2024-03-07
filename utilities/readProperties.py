@@ -25,7 +25,7 @@ class Readconfig():
         return password
     @staticmethod
     def getscreenshotPath():
-        screenshotpath =  config.get('ScreenshotDetails','screenshotpath')
+        screenshotpath =  config.get('ScreenshotDetails' ,'screenshotpath')
         return screenshotpath
 
 

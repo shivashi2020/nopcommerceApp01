@@ -6,8 +6,6 @@ from utilities.readProperties import Readconfig
 from utilities.customLogger import LogGen
 #screenshotPath = ".\\Screenshots\\"
 
-
-
 class Test_001_Login:
     baseurl = Readconfig.getApplicationURL()
     username = Readconfig.getUserEmail()
